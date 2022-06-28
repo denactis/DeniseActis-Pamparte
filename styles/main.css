@@ -149,6 +149,12 @@ grid-column: span 2;
         justify-content: center;
         }
 
+.card:hover{
+  color: darkgrey;
+  transform: scale (1.1)
+  
+}
+
         /* CSS DE RECETARTE */
         /* 3 TARJETAS BAJO IMAGEN */
 
