@@ -237,6 +237,8 @@ font-weight: bold;  }
   display: grid;
 place-items: center;  
 grid-column: 1; 
+padding: 55px;
+margin-bottom: 15px;
 }
 
 
@@ -248,19 +250,22 @@ grid-column: 1;
 
 .buscar button{
 font-weight: 800;
-color: #15374e
-}
+color: #15374e;
+background-color: #36dcd4;
+} 
 .costumbres {
   grid-area: ubicacion;
   display: flex;
-  justify-content:center
- 
+  justify-content:center;
+  margin-bottom: 15px;
+
 }
   
 .costumbres iframe {
   width: 70%;
-  min-height: 400px;
+  min-height: 300px;
   align-items: center;
+  margin-right: 65px;
  
 }
 
@@ -332,3 +337,7 @@ height: 600px;
   
 }
 
+.imgalbum img{
+  object-fit: cover;
+  
+}
