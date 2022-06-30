@@ -49,12 +49,6 @@ grid-column: span 2;
     grid-area: menu;
     }
       
-  .listanavegacion {
-       
-      display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 
   nav li {
     padding: 10px;
@@ -63,11 +57,9 @@ grid-column: span 2;
     list-style: none;
   }
 
-  nav li :hover {
-        font-size: 25px;
-        border: rgb(27, 153, 136);
-        border-style: double;
-        color: rgb(27, 153, 136);
+  nav button :hover {
+        color: aliceblue; 
+        transform: scale(1.3) ;
        
   }
 
@@ -135,19 +127,7 @@ grid-column: span 2;
     justify-content: center;
     }
 
-  footer :hover { 
-        height: 150px;
-        width: 100%;
-        background-color:lightskyblue;
-        border: 1px;
-        color: #15374e;
-        font-size: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-        grid-area: footer;
-        display: flex;
-        justify-content: center;
-        }
+
 
 .card:hover{
   color: darkgrey;
