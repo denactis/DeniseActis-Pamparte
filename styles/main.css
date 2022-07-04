@@ -129,11 +129,6 @@ grid-column: span 2;
 
 
 
-.containercards :hover{
-  color: darkgrey;
-  transform: scale (1.1)
-  
-}
 
         /* CSS DE RECETARTE */
         /* 3 TARJETAS BAJO IMAGEN */
@@ -184,10 +179,6 @@ grid-column: span 2;
 font-weight: bold;  }
 
 
-          /* CSS DE PRODUCTOS */
-
-        /* 3 TARJETAS BAJO IMAGEN */
-
 .containercards{
     width: 100%;
     max-width: 1400px;
@@ -211,7 +202,7 @@ font-weight: bold;  }
     background-color: #B3E8E5
   }
   
-.container .card:hover{
+.containercards .card:hover{
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }  
