@@ -129,7 +129,7 @@ grid-column: span 2;
 
 
 
-.card:hover{
+.containercards :hover{
   color: darkgrey;
   transform: scale (1.1)
   
