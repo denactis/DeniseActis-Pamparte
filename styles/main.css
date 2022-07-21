@@ -1,5 +1,4 @@
 
-
 #wrapper {
             display: grid;    
             grid-template-columns: 50% auto;
@@ -15,6 +14,7 @@
 
 body { 
     margin: 0 auto;
+    
     background-color: #3BACB6;
     width: 100%;
     color: #15374e;
@@ -104,8 +104,6 @@ grid-column: span 2;
         grid-area: ubicacion;
         display: flex;
         justify-content: center;
-              width: 75%;
-
        
     }
         
@@ -116,6 +114,24 @@ grid-column: span 2;
        
     }
     
+  .footer {
+  background-color: #36dcd4;
+  padding: 10px 0;
+}
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color: white;
+}
+
 
 
 .card:hover{
@@ -124,7 +140,7 @@ grid-column: span 2;
   
 }
 
-
+        /* CSS DE RECETARTE */
         /* 3 TARJETAS BAJO IMAGEN */
 
 .containercards{
@@ -150,11 +166,63 @@ grid-column: span 2;
     background-color: #B3E8E5
   }
   
-.containercards .card:hover {
+  
+  .containercards .card img{
+    width: 330px;
+    height: 220px;
+  }
+  
+  
+  .containercards .card h4{
+    font-weight: 600;
+  }
+  
+  .containercards .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .containercards .card a {
+    text-decoration: underline;
+    color: #15374e;
+font-weight: bold;  }
+
+
+          /* CSS DE PRODUCTOS */
+
+        /* 3 TARJETAS BAJO IMAGEN */
+
+.containercards{
+    width: 100%;
+    max-width: 1400px;
+    height:fit-content;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin: auto;
+    grid-area: banner;
+  }
+  
+  .containercards .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #B3E8E5
+  }
+
+  .containercards .card:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}  
 
+    }
+  
+  
   .containercards .card img{
     width: 330px;
     height: 220px;
@@ -180,6 +248,8 @@ font-weight: bold;  }
   display: grid;
 place-items: center;  
 grid-column: 1; 
+padding: 55px;
+margin-bottom: 15px;
 }
 
 
@@ -191,19 +261,22 @@ grid-column: 1;
 
 .buscar button{
 font-weight: 800;
-color: #15374e
-}
+color: #15374e;
+background-color: #36dcd4;
+} 
 .costumbres {
   grid-area: ubicacion;
   display: flex;
-  justify-content:center
- 
+  justify-content:center;
+  margin-bottom: 15px;
+
 }
   
 .costumbres iframe {
   width: 70%;
-  min-height: 400px;
+  min-height: 300px;
   align-items: center;
+  margin-right: 65px;
  
 }
 
@@ -268,26 +341,32 @@ height: 600px;
 
 
 
+
 .formulariocontacto{
   display: flex;
   
 }
 
+.imgalbum img{
+  object-fit: cover;
+  
+}
 
-.footer {
-  background-color: #36dcd4;
-  padding: 10px 0;
+
+  #contactForm {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-.footer a {
-  color: #70726F;
-  font-size: 20px;
-  padding: 10px;
-  border-right: 1px solid #70726F;
-  transition: all .5s ease;
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
-.footer a:first-child {
-  border-left: 1px solid #70726F;
-}
-.footer a:hover {
-  color: white;
-}
+
+
+
